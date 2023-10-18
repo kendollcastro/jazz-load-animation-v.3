@@ -1,0 +1,108 @@
+body {
+  background: snow;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* border: 1px solid red; */
+}
+
+.ball-wrapper {
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.line {
+  /* display: inline-block; */
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  /* background-color: #4b9cdb; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.jazz-logo img {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}
+
+.ring-1 {
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 7px dashed #4b9cdb;
+  border-radius: 100%;
+}
+
+.ring-2 {
+  position: relative;
+  width: 215px;
+  height: 215px;
+  margin: 0 auto;
+  border: 4px solid #4b9cdb;
+  border-radius: 100%;
+}
+
+.ball-holder {
+  position: absolute;
+  width: 135px;
+  height: 215px;
+  left: 45px;
+  top: 0px;
+}
+
+.ball {
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #4282b3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ball img {
+  width: 48px;
+  height: 48px;
+}
+
+.load-5 .ball-holder {
+  animation: loadingE 1.8s linear infinite;
+}
+
+/* Agrega una animación de rotación */
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes loadingE {
+  0 {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
